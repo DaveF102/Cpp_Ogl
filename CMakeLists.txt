@@ -10,6 +10,8 @@ file(GLOB SOURCES "src/*.cpp" "src/*.c")
 add_executable(cpp_ogl ${SOURCES})
 
 target_link_libraries(cpp_ogl PUBLIC freetype glfw ${CMAKE_DL_LIBS})
+# For Udacity Workspace:
+# target_link_libraries(cpp_ogl PUBLIC stdc++fs freetype glfw ${CMAKE_DL_LIBS})
 
 
 set_property(TARGET cpp_ogl PROPERTY CXX_STANDARD 17)
